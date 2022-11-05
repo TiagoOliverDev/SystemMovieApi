@@ -1,6 +1,5 @@
 PROJETO DE FILMES COM REACT E API DO TMDB (REACT ROUTER, REACT HOOKS)
 
-
 Vite: https://vitejs.dev/
 
 Utilizaremos o Vite para iniciar o projeto ao inves de iniciar com npx create react-app pois ele deixa mais otimizado
