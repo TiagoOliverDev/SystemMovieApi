@@ -1,32 +1,40 @@
-import { Link } from "react-router-dom"
-import { Input, Space } from 'antd';
-import { BiCameraMovie } from "react-icons/bi"
+import { useState } from "react";
+import { Link, useNavigate } from "react-router-dom"
+import { BiCameraMovie, BiSearchAlt2 } from "react-icons/bi"
 
-//import '../../src/style.css'
-import 'antd/dist/antd.min.css'
-
-const { Search } = Input;
-
-const onSearch = (value: string) => console.log(value);
+import "./Navbar.css"
 
 const Navbar = () => {
+  const[search, setSearch] = useState("")
+  const navigate = useNavigate()
+
+  const handleSubmit = (e) => {
+    e.preventDefault() //Prevendo o evento.
+    
+    if(!search) return
+    
+    navigate(`/search?q=${search}`)
+    setSearch("") //limpando form após redirecionar
+
+  }
+
     return (
      <nav id='navbar'>
         <h2>
           <Link to="/">
-            <BiCameraMovie/> MoviesLib
+            <BiCameraMovie/> SystemMoviesFree
           </Link>
         </h2>
-        <form>
-        <Space direction="vertical">
-          <Search
-            placeholder="Busque algum filme..."
-            allowClear
-            enterButton="Buscar"
-            size="large"
-            onSearch={onSearch}
+        <form onSubmit={handleSubmit} >
+          <input type="text" 
+          placeholder="Busque um filme"
+          onChange={(e) => setSearch(e.target.value)}
+          value={search}
           />
-        </Space>
+
+          <button type="submit" >
+            <BiSearchAlt2/>
+          </button>
         </form>
       </nav>
     ) 

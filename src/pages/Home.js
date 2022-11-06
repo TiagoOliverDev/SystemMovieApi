@@ -4,6 +4,8 @@ import MovieCard from "../components/MovieCard";
 //const moviesUrl = process.env.API;
 //const apikey = process.env.API_KEY;
 
+import './MovieGrid.css'
+
 const moviesUrl = "https://api.themoviedb.org/3/movie/";
 const apikey = "api_key=4c57440a889728bf7ddefe0bc3eb145d";
 
