@@ -2,17 +2,17 @@ PROJETO DE FILMES COM REACT E API DO TMDB (REACT ROUTER, REACT HOOKS)
 
 Vite: https://vitejs.dev/
 
-Utilizaremos o Vite para iniciar o projeto ao inves de iniciar com npx create react-app pois ele deixa mais otimizado
+Utilizei o Vite para iniciar o projeto ao inves de iniciar com npx create react-app pois ele deixa mais otimizado
 
 API: https://developers.themoviedb.org/3/getting-started/introduction
 
-Utilizaremos a api TMDB, uma API de filmes. Para utilizar ela precisamos gerar uma key
+Utilizei a api TMDB, uma API de filmes. Para utilizar ela precisamos gerar uma key
 
 key da api: 4c57440a889728bf7ddefe0bc3eb145d
 
 Projeto criado normal sem o vite: npx create-react-app tmdb
 
-Depois disso limpamos o projeto e em seguida fomos configurar o react routers dom no index.Js
+Depois disso limpei o projeto e em seguida configurei o react routers dom no index.Js
 onde importamos os componentes de routers e chamamos no render abaixo.
 
 
