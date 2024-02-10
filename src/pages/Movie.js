@@ -8,7 +8,7 @@ import{
 } from "react-icons/bs"
 
 import "./Movie.css"
-import MovieCard from "../components/MovieCard";
+import MovieCard from "../components/card/MovieCard";
 
 const moviesUrl = "https://api.themoviedb.org/3/movie/";
 const apikey = "api_key=4c57440a889728bf7ddefe0bc3eb145d";
