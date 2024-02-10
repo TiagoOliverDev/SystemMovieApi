@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 import { useSearchParams } from "react-router-dom"
-import MovieCard from "../components/MovieCard"
+import MovieCard from "../components/card/MovieCard"
 
 import "./MovieGrid.css"
 const searchURL = "https://api.themoviedb.org/3/search/movie/";

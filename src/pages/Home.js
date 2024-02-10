@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react";
-import MovieCard from "../components/MovieCard";
+import MovieCard from "../components/card/MovieCard";
 
 //const moviesUrl = process.env.API;
 //const apikey = process.env.API_KEY;
